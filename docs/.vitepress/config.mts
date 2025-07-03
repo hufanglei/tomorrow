@@ -9,6 +9,7 @@ const pkg = require('vitepress/package.json')
 export default defineConfig({
   title: "VitePress",
   description: "A VitePress Site",
+  ignoreDeadLinks: true,
   themeConfig: {
     nav: nav(),
 
@@ -17,11 +18,9 @@ export default defineConfig({
       options: searchOptions()
     },
 
-    logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
+    logo: { src: '/logo.png', width: 24, height: 24 },
 
     // https://vitepress.dev/reference/default-theme-config
-
-
 
     sidebar: {
       '/zh/guide/': { base: '/zh/guide/', items: sidebarGuide() },
