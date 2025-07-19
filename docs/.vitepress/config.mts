@@ -84,6 +84,41 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/zh/reference/'
     },
     {
+      text: 'AI',
+      link: '/zh/guide/what-is-vitepress',
+      activeMatch: '/zh/guide/'
+    },
+    {
+      text: '新媒体',
+      link: '/zh/reference/site-config',
+      activeMatch: '/zh/reference/'
+    },
+    {
+      text: '前端',
+      link: '/zh/guide/what-is-vitepress',
+      activeMatch: '/zh/guide/'
+    },
+    {
+      text: 'web3',
+      link: '/zh/reference/site-config',
+      activeMatch: '/zh/reference/'
+    },
+    {
+      text: 'java',
+      link: '/zh/guide/what-is-vitepress',
+      activeMatch: '/zh/guide/'
+    },
+    {
+      text: 'devops',
+      link: '/zh/reference/site-config',
+      activeMatch: '/zh/reference/'
+    },
+    {
+      text: '读书',
+      link: '/zh/guide/what-is-vitepress',
+      activeMatch: '/zh/guide/'
+    },
+    {
       text: "2.0.0-alpha.6",
       items: [
         {
