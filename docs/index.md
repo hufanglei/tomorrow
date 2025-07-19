@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: 由 Vite 和 Vue 驱动的静态站点生成器
-  tagline: 将 Markdown 变成优雅的文档，只需几分钟
+  name: 知识共享站
+  text: 积累知识和财富的地方
+  tagline: 山穷水尽的边缘到柳暗花明的康庄大道，只需几分钟
   image:
     src: /main-banner.png
     alt: VitePress

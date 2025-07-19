@@ -7,8 +7,8 @@ const pkg = require('vitepress/package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "VitePress",
-  description: "A VitePress Site",
+  title: "财富密码",
+  description: "梦想发芽，财富积累的地方",
   ignoreDeadLinks: true,
   themeConfig: {
     nav: nav(),
