@@ -26,6 +26,7 @@ export default defineConfig({
       '/zh/guide/': { base: '/zh/guide/', items: sidebarGuide() },
       '/zh/reference/': { base: '/zh/reference/', items: sidebarReference() },
       '/zh/front/': { base: '/zh/front/', items: sidebarFront() },
+      '/zh/web3/': { base: '/zh/web3/', items: sidebarWeb3() },
       '/zh/book/': { base: '/zh/book/', items: sidebarBook() }
     },
 
@@ -102,8 +103,8 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: 'web3',
-      link: '/zh/reference/site-config',
-      activeMatch: '/zh/reference/'
+      link: '/zh/web3/web3-01',
+      activeMatch: '/zh/web3/'
     },
     {
       text: 'java',
@@ -284,6 +285,19 @@ function sidebarFront(): DefaultTheme.SidebarItem[] {
     }
   ]
 }
+
+function sidebarWeb3(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'web3',
+      base: '/zh/web3/web3-',
+      items: [
+        { text: 'mksz214 - 区块链入门与去中心化应用实战', link: '01' }
+      ]
+    }
+  ]
+}
+
 
 
 
