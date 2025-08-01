@@ -7,7 +7,7 @@ const pkg = require('vitepress/package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "财富密码",
+  title: "知识密码",
   description: "梦想发芽，财富积累的地方",
   ignoreDeadLinks: true,
   themeConfig: {
@@ -24,7 +24,9 @@ export default defineConfig({
 
     sidebar: {
       '/zh/guide/': { base: '/zh/guide/', items: sidebarGuide() },
-      '/zh/reference/': { base: '/zh/reference/', items: sidebarReference() }
+      '/zh/reference/': { base: '/zh/reference/', items: sidebarReference() },
+      '/zh/front/': { base: '/zh/front/', items: sidebarFront() },
+      '/zh/book/': { base: '/zh/book/', items: sidebarBook() }
     },
 
     socialLinks: [
@@ -95,8 +97,8 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: '前端',
-      link: '/zh/guide/what-is-vitepress',
-      activeMatch: '/zh/guide/'
+      link: '/zh/front/vue-542',
+      activeMatch: '/zh/front/'
     },
     {
       text: 'web3',
@@ -115,8 +117,8 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: '读书',
-      link: '/zh/guide/what-is-vitepress',
-      activeMatch: '/zh/guide/'
+      link: '/zh/book/01-gaoqingshang/gaoqingshang-01',
+      activeMatch: '/zh/book/'
     },
     {
       text: "2.0.0-alpha.6",
@@ -261,4 +263,83 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
     }
   ]
 }
+
+
+function sidebarFront(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: '前端',
+      items: [
+        { text: 'uniapp', link: 'uniapp' },
+        { text: 'reactactive', link: 'reactactive' },
+        {
+          text: 'vue',
+          base: '/zh/front/vue-',
+          items: [
+            { text: '基于Vue3最新标准,实现后台前端综合解决方案', link: '542' },
+            { text: '基于Vue3,打造前台+中台通用提效解决方案', link: '577' },
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+function sidebarBook(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: '高情商沟通',
+      collapsed: false,
+      base: '/zh/book/01-gaoqingshang/gaoqingshang-',
+      items: [
+        { text: '01-夸人就要夸到心坎里，培养社交中的高情商', link: '01' },
+        { text: '02-沟通拒绝绕弯子，省时省力更高效', link: '02' },
+        { text: '03-有趣表达法幽默是破除距离第一步，不做气氛冷场王', link: '03' },
+        { text: '04-沟通角色定位_避免沟通矛盾，提高社交竞争力', link: '04' },
+        { text: '05-沟通细节_细节决定沟通的成败，打造特色人格魅力', link: '05' },
+        { text: '06-表达有主见_说话深思熟虑不跟风，提高社交影响力', link: '06' },
+        { text: '07-沟通读心术_以对方需求为切入点，瞬间赢得对方信任', link: '07' },
+        { text: '08-适度妥协战略_以柔克刚，化解沟通矛盾的黄金法则', link: '08' },
+        { text: '09-沟通信任值_迅速破冰建立信任，获得持续好感的秘密', link: '09' },
+        { text: '10-温柔沟通_语气体现了你的素养，轻松获得好人缘的奥秘', link: '10' },
+        { text: '11-肢体表达_沟通高手都在用的沟通助推器', link: '11' },
+        { text: '12-同理心沟通_同理心沟通才是沟通的最高境界', link: '12' },
+      ]
+    },
+    {
+      text: '写作',
+      collapsed: false,
+      items: [
+        { text: 'Markdown 扩展', link: 'markdown' },
+        { text: '资源处理', link: 'asset-handling' },
+        { text: 'frontmatter', link: 'frontmatter' },
+        { text: '在 Markdown 使用 Vue', link: 'using-vue' },
+        { text: '国际化', link: 'i18n' }
+      ]
+    },
+    {
+      text: '自定义',
+      collapsed: false,
+      items: [
+        { text: '自定义主题', link: 'custom-theme' },
+        { text: '扩展默认主题', link: 'extending-default-theme' },
+        { text: '构建时数据加载', link: 'data-loading' },
+        { text: 'SSR 兼容性', link: 'ssr-compat' },
+        { text: '连接 CMS', link: 'cms' }
+      ]
+    },
+    {
+      text: '实验性功能',
+      collapsed: false,
+      items: [
+        { text: 'MPA 模式', link: 'mpa-mode' },
+        { text: 'sitemap 生成', link: 'sitemap-generation' }
+      ]
+    },
+    { text: '配置和 API 参考', base: '/zh/reference/', link: 'site-config' }
+  ]
+}
+
 
