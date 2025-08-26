@@ -292,7 +292,8 @@ function sidebarWeb3(): DefaultTheme.SidebarItem[] {
       text: 'web3',
       base: '/zh/web3/web3-',
       items: [
-        { text: 'mksz214 - 区块链入门与去中心化应用实战', link: '01' }
+        { text: 'mksz214 - 区块链入门与去中心化应用实战', link: '01' },
+        { text: 'Web3.0入门与实战:一站式掌握4大主流区块链开发完结', link: '02' }
       ]
     }
   ]
