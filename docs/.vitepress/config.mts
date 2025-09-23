@@ -277,6 +277,7 @@ function sidebarFront(): DefaultTheme.SidebarItem[] {
           text: 'vue',
           base: '/zh/front/vue-',
           items: [
+            { text: '9小时搞定微信小程序', link: 'wxapp01' },
             { text: '基于Vue3最新标准,实现后台前端综合解决方案', link: '542' },
             { text: '基于Vue3,打造前台+中台通用提效解决方案', link: '577' },
           ]
