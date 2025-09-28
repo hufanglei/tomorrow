@@ -3,8 +3,11 @@ outline: deep
 ---
 
 # 微信小程序
-
-
+![img.png](img/img.png)
+![img.png](img/img02.png)
+![img.png](img/img03.png)
+![img.png](img/img04.png)
+![img.png](img/img05.png)
 ## 第一章 微信小程序介绍与开发准备
 
 ## 第二章 上手第一个微信小程序
