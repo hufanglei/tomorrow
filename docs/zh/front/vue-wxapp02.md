@@ -11,6 +11,13 @@ outline: deep
 - 05-项目目录介绍-了解
 - 06-项目目录介绍-重点
 - 07-样式和sass
+
+```shell
+   uniapp官网: https://uniapp.dcloud.net.cn/quickstart-cli.html
+   初始化项目: npx degit dcloudio/uni-preset-vue#vite my-vue3-project
+   安装依赖: npm install -g sass
+```   
+
 - 08-基本语法-数据显示
 - 08-数据循环
 - 09-条件编译
